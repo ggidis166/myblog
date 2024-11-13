@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block mainwrapper %}
+    <div class="main-wrapper" style="height: auto">
+        <div class="single-form-max-width pt-3 mx-auto" style="height: auto">
+            <form class="signup-form row g-2 g-lg-2 align-items-center" style="height: auto">
+
+                <div class="signup-form row g-2 g-lg-2 align-items-center" style="height: auto">
+                    <div class="col-12 col-md-2">
+                        <label class="btn btn-primary">标题</label>
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <label class="sr-only" for="g_title"></label>
+                        <input type="text" id="g_title" name="g_title" class="form-control me-md-1" placeholder="点击这里输入">
+                    </div>
+                </div>
+
+                <div class="signup-form row g-2 g-lg-2 align-items-center" style="height: auto">
+                    <div class="col-12 col-md-2" style="">
+                        <label class="btn btn-primary">内容</label>
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <label class="sr-only" for="g_content"></label>
+                        <input type="text" id="g_content" name="g_content" class="form-control me-md-1" style="height: 300px;" placeholder="点击这里输入">
+                    </div>
+                </div>
+
+            </form><!--//signup-form-->
+        </div><!--//single-form-max-width-->
+        <nav class="blog-nav nav nav-justified my-5">
+                  <a class="nav-link-prev nav-item nav-link rounded-left" href="#">日志</a>
+                </nav>
+                <nav class="blog-nav nav nav-justified my-5">
+                  <a class="nav-link-next nav-item nav-link rounded-right" href="#">模块2</a>
+                </nav>
+    </div>
+{% endblock %}

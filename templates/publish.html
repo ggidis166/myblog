@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="../static/publish/publish.css">
+{% endblock %}
+
+{% block mainwrapper %}
+
+ <div class="main-wrapper" style="height: auto">
+    <div class="container">
+    <h1>发布页面</h1>
+    <form id="publish-form">
+        <div class="form-group">
+            <label for="title" class="btn btn-primary" style="width: 60px;">标题：</label>
+            <input type="text" id="title" class="input" placeholder="输入标题">
+        </div>
+        <div class="form-group">
+            <label for="content" class="btn btn-primary" style="width: 60px">内容：</label>
+            <div id="content" class="text-editor" contenteditable="true" placeholder="输入内容..."></div>
+        </div>
+
+<div class="form-group">
+    <label for="image"></label>
+    <div class="custom-file-upload">
+        <input type="file" id="image" class="input" style="display: none;">
+        <button id="upload-button" class="btn">选择图片</button>
+    </div>
+</div>
+
+
+        <button type="submit" class="btn">发布</button>
+    </form>
+</div>
+
+ </div>
+
+{% endblock %}
+{% block pjs %}
+<script src="../static/publish/publish.js"></script>
+{% endblock %}
