@@ -1,7 +1,7 @@
 SECRET_KEY = 'thisismyfirstownblog'
 
 username = 'root'
-password = 'root'
+password = 'root.'
 hostname = '127.0.0.1'
 port = 3306
 database = 'myblog'
